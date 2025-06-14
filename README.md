@@ -1,62 +1,81 @@
-Simple File Management Tool
+ExpServer
+A basic web server built using Express.js. This project demonstrates simple routing, middleware usage, and rendering styled HTML pages directly from your server.
 
-A basic Node.js file management tool built using core modules. Allows you to create, read, and delete files via HTTP requests.
+🚀 Features
+Set up a simple and elegant web server using Express.js
 
-Features include creating files with custom content, reading file contents, deleting files, and it uses only Node.js core modules (fs, path, http, events).
+Handles basic routing for three endpoints:
 
-To install, clone the repository with:
+/ (Home Page)
 
-git clone https://github.com/dhruv00712/file-manager.git
+/second (Second Page)
 
-Navigate into the folder using:
+/third (Third Page)
 
-cd file-manager
+Includes middleware for logging all incoming requests
 
-Run the server with:
+Sends back clean, styled HTML pages directly from the server (no template engine)
 
+Uses only core functionality from Express.js
+
+📦 Installation
+Clone the repository:
+
+bash
+
+git clone https://github.com/dhruv00712/ExpServer.git
+Navigate into the project directory:
+
+bash
+
+cd ExpServer
+Install dependencies (Express is required):
+
+bash
+
+npm install
+▶️ Run the Server
+Start the server with:
+
+bash
 node server.js
+(Replace server.js with your actual filename if different)
 
-(Replace server.js with your actual server filename.)
+🌐 Access the Server
+Once the server is running, open your browser and visit:
 
-The server runs at http://localhost:3000.
+🏠 Home Page: http://localhost:3000/
 
-Endpoints include:
+📄 Second Page: http://localhost:3000/second
 
-Create a file via  
-GET /create?filename=yourfile.txt&content=yourtext  
-Example:  
-http://localhost:3000/create?filename=test.txt&content=HelloWorld
+📄 Third Page: http://localhost:3000/third
 
-Read a file via  
-GET /read?filename=yourfile.txt  
-Example:  
-http://localhost:3000/read?filename=test.txt
 
-Delete a file via  
-GET /delete?filename=yourfile.txt  
-Example:  
-http://localhost:3000/delete?filename=test.txt
 
-Note that all operations use HTTP GET for simplicity, but ideally POST and DELETE methods should be used.
+📁 Routes
+Home Page
+GET /
+Displays a welcome message on the home page.
+Example:
+http://localhost:3000/
 
-Files are stored in the project directory.
+Second Page
+GET /second
+Displays content for the second page.
+Example:
+http://localhost:3000/second
 
-Ensure Node.js is installed on your system.
+Third Page
+GET /third
+Displays content for the third page.
+Example:
+http://localhost:3000/third
 
-For testing, you can use a browser, curl, or Postman.
+🛠️ Technologies Used
+Node.js
 
-Example curl commands:
+Express.js
 
-Create a file:
 
-curl "http://localhost:3000/create?filename=example.txt&content=HelloWorld"
-
-Read a file:
-
-curl "http://localhost:3000/read?filename=example.txt"
-
-Delete a file:
-
-curl "http://localhost:3000/delete?filename=example.txt"
-
-License: MIT © Dhruv
+📄 License
+MIT © Dhruv
