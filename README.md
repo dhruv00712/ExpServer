@@ -38,8 +38,9 @@ npm install
 Start the server with:
 
 bash
-node server.js
-(Replace server.js with your actual filename if different)
+node index.js
+
+(Replace index.js with your actual filename if different)
 
 🌐 Access the Server
 Once the server is running, open your browser and visit:
